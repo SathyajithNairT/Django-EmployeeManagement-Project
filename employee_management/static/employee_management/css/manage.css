@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+}
+
+th{
+    font-size: 1.8rem;
+    width: 10rem;
+    padding-bottom: 1rem;
+}
+
+td{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.manage-main-wrap{
+    background-color: rgb(41, 40, 40);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage-nav{
+    padding: 0.2rem;
+    text-decoration: none;
+}
+
+.view{
+    color: rgb(18, 180, 18);
+    border-bottom: 1px solid rgb(18, 180, 18);
+}
+
+.edit{
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+
+.delete{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.manage-navigation-wrap{
+    margin-top: 2rem;
+}
+
+.manage-navigation{
+    color: green;
+    font-size: 1.5rem;
+}

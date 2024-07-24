@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+}
+
+.view-main-wrap{
+    background-color: rgb(41, 40, 40);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-main-heading{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.view-employee-details{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.view-nav-wrap{
+    margin-top: 2rem;
+}
+
+.view-nav{
+    font-size: 1.5rem;
+    color: green;
+}

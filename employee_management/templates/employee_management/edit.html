@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="{% static 'employee_management/css/edit.css' %}">
+</head>
+<body>
+    <div class="edit-main-wrap">
+        <div class="edit-form-wrap">
+            <form action="" method="post" class="edit-form">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Name" value="{{data.name}}" class="input-field">
+                <input type="text" name="designation" placeholder="Designation" value="{{data.designation}}" class="input-field">
+                <input type="text" name="gender" placeholder="Gender" value="{{data.gender}}" class="input-field">
+                <input type="text" name="state" placeholder="State" value="{{data.state}}" class="input-field">
+                <input type="text" name="nationality" placeholder="Nationality" value="{{data.nationality}}" class="input-field">
+                <input type="email" name="email" placeholder="Email" value="{{data.email}}" class="input-field">
+
+                <div class="edit-btn-wrap"><button class="edit-btn" type="submit">Save Changes</button></div>
+            </form>
+        </div>
+        <div class="edit-navigation-wrap"><a href="{% url 'manage' %}" class="edit-navigation">Go back to employee management</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Employee</title>
+    <link rel="stylesheet" href="{% static 'employee_management/css/view.css' %}">
+</head>
+<body>
+    <div class="view-main-wrap">
+        <div class="view-main-heading">Details of employee {{data.name}}:</div>
+        <div>
+            <div class="view-employee-details">Name: {{data.name}}</div>
+            <div class="view-employee-details">Designation: {{data.designation}}</div>
+            <div class="view-employee-details">Gender: {{data.gender}}</div>
+            <div class="view-employee-details">Email: {{data.email}}</div>
+            <div class="view-employee-details">State: {{data.state}}</div>
+            <div class="view-employee-details">Nationality: {{data.nationality}}</div>
+        </div>
+        <div class="view-nav-wrap"><a href="{% url 'manage' %}" class="view-nav">Go back to employee management</a></div>
+    </div>
+</body>
+</html>
